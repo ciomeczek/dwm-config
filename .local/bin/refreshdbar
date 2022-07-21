@@ -1,0 +1,5 @@
+#!/bin/sh
+
+killall -q dbar 
+
+$HOME/.local/bin/dbar &

@@ -1,0 +1,16 @@
+#!/bin/sh
+
+status()
+{
+	VOLUME=$(awk -F"[][]" '/Left:/ { print $2 }' <(amixer sget Master))
+	DATE=$(date "+%T")
+
+	BAR="| AUDIO: $VOLUME | $DATE"
+	echo $BAR
+}
+
+while :; do
+	xsetroot -name "$(status) "
+	sleep 1
+done
+

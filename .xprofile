@@ -1,0 +1,8 @@
+#!/bin/sh
+
+picom &
+xset -b
+xbindkeys
+$HOME/.local/bin/dbar &
+feh --no-fehbg --bg-fill Pictures/lain.jpg
+
