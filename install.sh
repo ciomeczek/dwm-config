@@ -29,4 +29,6 @@ echo "Reboot? y/n"
 read yn
 
 if [$yn == "y"]
+then
 	reboot
+fi
